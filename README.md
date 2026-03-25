@@ -41,14 +41,18 @@ A Yelp-style web application built with Ruby on Rails where users can browse res
 
 ## Setup
 
+```bash
 git clone <your-repo-url>
 cd rails-yelp-mvp
 bundle install
 rails db:create db:migrate db:seed
 rails server
+```
 
 Run tests:
+```bash
 rspec
+```
 
 Open in your browser:
 http://localhost:3000/restaurants
