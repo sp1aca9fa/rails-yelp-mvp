@@ -1,4 +1,4 @@
-# Rails Yelp MVP
+# rails-yelp-mvp
 
 A Yelp-style web application built with Ruby on Rails where users can browse restaurants and leave reviews.
 
@@ -15,7 +15,7 @@ A Yelp-style web application built with Ruby on Rails where users can browse res
 - Ruby on Rails
 - Active Record (ORM)
 - ERB (Embedded Ruby)
-- Bootstrap (for styling)
+- Bootstrap 5 (via CDN)
 - Simple Form (for form handling)
 - RSpec (for testing)
 
@@ -25,24 +25,24 @@ A Yelp-style web application built with Ruby on Rails where users can browse res
   - name
   - address
   - phone_number
-  - category
+  - category *(must be one of: chinese, italian, japanese, french, belgian)*
 
 - **Review**
   - content
-  - rating
+  - rating *(integer, 0–5)*
   - belongs to a restaurant
 
 ## How It Works
 
 - Restaurants and reviews are connected through Active Record associations
 - Reviews are nested under restaurants using RESTful routing
-- Validations ensure data integrity (e.g., rating range, required fields)
+- Validations ensure data integrity (e.g., rating range 0–5, required fields, category allowlist)
 - Forms are handled using Simple Form for cleaner view code
 
 ## Setup
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/sp1aca9fa/rails-yelp-mvp.git
 cd rails-yelp-mvp
 bundle install
 rails db:create db:migrate db:seed
@@ -55,7 +55,7 @@ rspec
 ```
 
 Open in your browser:
-http://localhost:3000/restaurants
+http://localhost:3000
 
 ## Learnings
 
