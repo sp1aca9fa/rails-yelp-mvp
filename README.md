@@ -1,4 +1,4 @@
-# rails-yelp-mvp
+# Rails Yelp MVP
 
 A Yelp-style web application built with Ruby on Rails where users can browse restaurants and leave reviews.
 
