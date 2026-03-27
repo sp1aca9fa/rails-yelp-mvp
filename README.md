@@ -17,7 +17,6 @@ A Yelp-style web application built with Ruby on Rails where users can browse res
 - ERB (Embedded Ruby)
 - Bootstrap 5 (via CDN)
 - Simple Form (for form handling)
-- RSpec (for testing)
 
 ## Data Model
 
@@ -49,11 +48,6 @@ rails db:create db:migrate db:seed
 rails server
 ```
 
-Run tests:
-```bash
-rspec
-```
-
 Open in your browser:
 http://localhost:3000
 
@@ -63,7 +57,6 @@ http://localhost:3000
 - Implementing associations (has_many / belongs_to)
 - Using nested resources and routes
 - Validating user input at the model level
-- Writing and running tests with RSpec
 - Structuring multi-model Rails applications
 
 ## Notes
