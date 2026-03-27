@@ -68,4 +68,4 @@ http://localhost:3000
 
 ## Notes
 
-This project was built to practice building a relational Rails application with multiple models and user-driven data.
+This project is a solution to a Le Wagon bootcamp coding challenge. The purpose was to practice building a relational Rails application with multiple models.
